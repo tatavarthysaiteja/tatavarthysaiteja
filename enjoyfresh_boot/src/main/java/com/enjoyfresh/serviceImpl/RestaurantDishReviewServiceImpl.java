@@ -55,10 +55,10 @@ public class RestaurantDishReviewServiceImpl implements RestaurantDishReviewServ
 	}
 
 	@Override
-	public RespBean updateRestaurantDishReview( Long reviewId)throws Exception {
+	public RespBean updateRestaurantDishReview( RestaurantDishReview review1)throws Exception {
 		
 		
-		RestaurantDishReview review =restaurantDishReviewRepository.getOne(reviewId);
+		RestaurantDishReview review =restaurantDishReviewRepository.getOne(review1.getReviewId());
 		if(review==null) {
 			throw new CustomException(Messages.RESTAURANT_DOES_NOT_EXIST);
 		}
@@ -71,8 +71,18 @@ public class RestaurantDishReviewServiceImpl implements RestaurantDishReviewServ
 			if (!ValChecker.isEmptyOrNull(review.getDateAdded())) {
 				review.setDateAdded(review.getDateAdded());
 			}
+			if (!ValChecker.isEmptyOrNull(review.getReview())) {
+				review.setReview(review.getReview());
+			}
 		
-		
+			if (review.getDishId()<1) {
+				review.setDishId(review.getDishId());
+			}
+			
+			
+			
+			
+			
 		
 		}
 		

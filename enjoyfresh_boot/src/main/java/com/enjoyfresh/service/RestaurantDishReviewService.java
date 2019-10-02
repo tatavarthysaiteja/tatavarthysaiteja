@@ -12,7 +12,7 @@ public interface RestaurantDishReviewService {
 	
 	RespBean addRestaurantDishReview(RestaurantDishReview review)throws Exception;
 	
-	RespBean updateRestaurantDishReview(Long reviewId)throws Exception;
+	RespBean updateRestaurantDishReview(RestaurantDishReview review)throws Exception;
 	
 	RespBean  getRestaurantDishReview()throws Exception;
 	
