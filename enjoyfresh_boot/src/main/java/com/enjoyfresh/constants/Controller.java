@@ -47,9 +47,23 @@ public interface Controller extends Constants {
 	 String REGISTER = "/register";
 	 
 	 
+	 // restaurant dish review	 
 	 
 	 
 	 
+	 String ADD_REVIEW="/addRestaurantDishReview";
+	 String UPDATE_REVIEW="/updateRestaurantDishReview";
+	 String GET_REVIEW="/getRestaurantDishReview";
+	 String GET_ALL_REVIEWS="/getAllRestaurantDishReviews";
+	 String DELETE_REVIEW="/deleteRestaurantDishReview";
 	 
 		
+	// restaurant dish review comment
+	 
+	 String ADD_COMMENT="/addRestaurantDishReviewComment";
+	 String UPDATE_COMMENT="/updateRestaurantDishReviewComment";
+	 String GET_COMMENT="/getRestaurantDishReviewComment";
+	 String GET_ALL_COMMENTS="/getAllRestaurantDishReviewComments";
+	 String DELETE_COMMENT="/deleteRestaurantDishReviewComment";
+	 
 }

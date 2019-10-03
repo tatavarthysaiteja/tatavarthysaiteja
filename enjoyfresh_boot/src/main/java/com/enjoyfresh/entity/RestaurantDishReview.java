@@ -9,9 +9,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.DynamicUpdate;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @SuppressWarnings("serial")
 @Entity
 @Table(name = "restaurant_dish_review")
+@DynamicUpdate
+@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
 public class RestaurantDishReview implements Serializable {
 	
     @Id

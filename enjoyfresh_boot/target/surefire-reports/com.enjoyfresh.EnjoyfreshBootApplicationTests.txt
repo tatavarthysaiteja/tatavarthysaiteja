@@ -1,9 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.enjoyfresh.EnjoyfreshBootApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 26.924 s <<< FAILURE! - in com.enjoyfresh.EnjoyfreshBootApplicationTests
-contextLoads(com.enjoyfresh.EnjoyfreshBootApplicationTests)  Time elapsed: 0.244 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restaurantDishReviewServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.NullPointerException
-Caused by: java.lang.NullPointerException
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.379 s - in com.enjoyfresh.EnjoyfreshBootApplicationTests

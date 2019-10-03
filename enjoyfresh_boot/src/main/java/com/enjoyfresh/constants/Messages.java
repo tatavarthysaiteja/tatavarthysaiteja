@@ -47,7 +47,35 @@ public enum Messages {
 	USER_DELETED("User Deleted"),
 	USER_REGISTERED("User Registered"), 
 	USER_LOGIN_SUCCESS("User login success"), 
-	ORDERS_AVAILABLE("orders found"), OrdersFound("")
+	ORDERS_AVAILABLE("orders found"), OrdersFound(""), 
+	
+	
+	
+	
+	//Restaurant dish review comment
+	
+	
+	DELETED("REVIEW DELETED"), 
+	COMMENT_ADDED("comment added"),
+	COMMENT_FOUND("COMMENT FOUND"),
+	COMMENT_NOT_FOUND("comment not found"),
+	COMMENT_UPDATED("comment updated"), 
+	COMMENTS_UNAVAILABLE("comments unavailbe"),
+	COMMENTS_AVAILABLE("comments available"), 
+	COMMENT_DELETED("comment deleted"),
+	
+	//Restaurant dish review
+	
+	REVIEW_DELETED("REVIEW DELETED"),
+	REVIEW_ADDED("Review added"),
+	REVIEW_FOUND("Review FOUND"),
+	REVIEW_NOT_FOUND("Review not found"),
+	REVIEW_UPDATED("Review updated"), 
+	REVIEWS_UNAVAILABLE("Reviews unavailbe"),
+	REVIEWS_AVAILABLE("Reviews available")
+	
+	
+	
 	
 	
 	
